@@ -108,6 +108,9 @@ footer p {
   .menu a {
     font-size: 13px;
   }
+    .menu li {
+    width: 80px;
+  }
 }
 /* slider */
 .slider li img {
