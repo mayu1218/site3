@@ -410,6 +410,11 @@ table th {
     display: block;
   }
 }
+  @media screen and (max-width: 650px) {
+  .access-map2 {
+    display: none;
+  }
+}
 /* faq */
 .red {
   color: #B4CCB8;
