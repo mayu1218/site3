@@ -136,6 +136,34 @@ footer p {
 aside {
   width: 25%;
 }
+.map-sm {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .wrapper {
+    display: block;
+  }
+  .main {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+  }
+  .button {
+    width: 80%;
+  }
+  .news {
+    text-align: left;
+  }
+  .map-sm {
+    display: block;
+  }
+ .map-midi {
+   display:none;
+ }
+}
 /* features */
 .section-title {
   padding: 15px 30px;
