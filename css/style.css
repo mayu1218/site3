@@ -388,30 +388,31 @@ table th {
 @media screen and (max-width: 650px) {
   table th , table td {
     padding: 10px 10px;
+  }
 }
 
 /* access */
-.access-map {
-  text-align: center;
+.map-big {
+  display: block;
 }
-.access-map2 {
+.map-middle {
   display: none;
 }
-
 .access h2 {
   border-bottom: 3px dashed #B4CCB8;
   display: inline-block;
 }
 @media screen and (max-width: 850px) {
-  .access-map {
+  .map-big {
     display: none;
   }
-  .access-map2 {
+  .map-middle {
     display: block;
   }
 }
-  @media screen and (max-width: 650px) {
-  .access-map2 {
+
+@media screen and (max-width: 650px) {
+  .map-middle {
     display: none;
   }
 }
