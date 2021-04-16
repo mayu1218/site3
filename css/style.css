@@ -22,10 +22,9 @@ html, body {
 }
 footer {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   bottom: 0;
-  margin-top: 100px;
 }
 footer p {
   margin: 0;
@@ -62,6 +61,7 @@ footer p {
 .header-top div {
   text-align: right;
 }
+
 /* nav */
 .header-nav {
   background: #1B9E8D;
@@ -108,14 +108,15 @@ footer p {
   .menu a {
     font-size: 13px;
   }
-    .menu li {
+  .menu li {
     width: 80px;
   }
 }
+
 /* slider */
 .slider li img {
   width: 100%;
-  height:550px;
+  height: 1000px;
   object-fit: cover;
 }
 .slider a {
@@ -124,12 +125,11 @@ footer p {
 .slider a div {
   width: 100%;
   position: absolute;
-  top: 10vh;
+  top: 10%;
   left: 10vw;
-
 }
 .slider a div p {
-  font-size: 35px;
+  font-size: 40px;
   color: white;
   text-shadow: 1px 1px 1px #1B9E8D;
   font-weight: bold;
@@ -147,6 +147,20 @@ aside {
 .map-sm {
   display: none;
 }
+
+@media screen and (max-width: 1300px) {
+  .slider li img {
+    height: 800px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .slider li img {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .wrapper {
     display: block;
@@ -171,7 +185,7 @@ aside {
  .map-midi {
    display:none;
  }
-  .slider li img {
+ .slider li img {
   width: 100%;
   height:250px;
   object-fit: cover;
@@ -180,6 +194,7 @@ aside {
   display: none;
 }
 }
+
 /* features */
 .section-title {
   padding: 15px 30px;
@@ -239,8 +254,6 @@ aside {
   margin-right: 10px;
 }
 
-
-
 /* aside */
 aside {
   margin-top: 20px;
@@ -281,20 +294,30 @@ aside {
 }
 
 /* footer */
+
 footer {
   background: #dde2e1;
   height: 100px;
   text-align: center;
+
 }
 footer p {
   line-height: 100px;
+
 }
 
 /* greeting */
 .top-img {
   width: 100%;
-  height: 550px;
+  height: 1000px;
   object-fit: cover;
+}
+@media screen and (max-width: 650px) {
+  .top-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
 }
 .greeting-left {
   width: 50%;
@@ -309,7 +332,7 @@ footer p {
 }
 .main-text {
   color: #1B9E8D;
-  font-size: 20px;
+  font-size: 35px;
   font-weight: bold;
 }
 @media screen and (max-width: 850px) {
@@ -321,25 +344,17 @@ footer p {
     width: 90%;
   }
 }
-@media screen and (max-width: 650px) {
-  .top-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-}
 
 /* introduction */
 .docter-list {
   display: flex;
   width: 49%;
-
   justify-content: space-between;
 }
 .docter-list li {
   width: 47%;
   align-self: center;
-  font-size: 1.5vw;
+  font-size: 25px;
 }
 .docter-list li img {
   width: 100%;
@@ -352,6 +367,22 @@ footer p {
 .a {
   width: 100%;
 }
+@media screen and (max-width: 1300px) {
+  .top-img {
+    height: 800px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .top-img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .docter-list li {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .docter {
     height: auto;
@@ -416,6 +447,7 @@ table th {
     display: none;
   }
 }
+
 /* faq */
 .red {
   color: #B4CCB8;
